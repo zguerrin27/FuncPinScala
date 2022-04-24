@@ -1,0 +1,171 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "funcpinscala-test",
+        "directory": "/Users/zguerrin/Documents/personalDev/funcpinscala",
+        "workspaceDir": "/Users/zguerrin/Documents/personalDev/funcpinscala",
+        "sources": [
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/src/test/scala",
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/src/test/scala-2.13",
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/src/test/scala-2",
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/src/test/java",
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "funcpinscala"
+        ],
+        "classpath": [
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/.bloop/funcpinscala/scala-2.13/classes",
+            "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+            "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.1/scala-parser-combinators_2.13-2.1.1.jar"
+        ],
+        "out": "/Users/zguerrin/Documents/personalDev/funcpinscala/.bloop/funcpinscala",
+        "classesDir": "/Users/zguerrin/Documents/personalDev/funcpinscala/.bloop/funcpinscala/scala-2.13/test-classes",
+        "resources": [
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/src/test/resources",
+            "/Users/zguerrin/Documents/personalDev/funcpinscala/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.8",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+                "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-compiler/2.13.8/scala-compiler-2.13.8.jar",
+                "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar",
+                "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/net/java/dev/jna/jna/5.9.0/jna-5.9.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre",
+                "options": [
+                    "-Duser.dir=/Users/zguerrin/Documents/personalDev/funcpinscala"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.13",
+                    "version": "2.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "path": "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.1/scala-parser-combinators_2.13-2.1.1.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.1/scala-parser-combinators_2.13-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/zguerrin/Library/Caches/Coursier/v1/https/hopperuscentral.jfrog.io/artifactory/maven-release/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

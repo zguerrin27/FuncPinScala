@@ -1,0 +1,4 @@
+[debug] [funcpinscala-test] Classpath dependencies List()
+[debug] [funcpinscala-test] Dependencies from configurations List(funcpinscala)
+[debug] Bloop wrote the configuration of project 'funcpinscala-test' to '/Users/zguerrin/Documents/personalDev/funcpinscala/.bloop/funcpinscala-test.json'
+[success] Generated .bloop/funcpinscala-test.json
