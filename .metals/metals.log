@@ -575,3 +575,148 @@ Apr 24, 2022 11:34:38 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint noti
 INFO: Unsupported notification method: $/setTrace
 2022.04.24 11:34:49 INFO  compiling funcpinscala (1 scala source)
 2022.04.24 11:34:49 INFO  time: compiled funcpinscala in 0.82s
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in Array[<error>]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 207, 207, 222)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in Array[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 207, 207, 215)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in Array[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 207, 207, 215)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in Array[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 207, 207, 215)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in (A, <error>)RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 226, 226, 238)
+Apr 24, 2022 1:13:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 22 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:143)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:78)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:77)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1615)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1614)
+	... 15 more
+
+Apr 24, 2022 1:14:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 22 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:143)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:78)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:77)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1615)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1614)
+	... 15 more
+
+Apr 24, 2022 1:16:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 24 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:143)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:78)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:77)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1615)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1614)
+	... 15 more
+
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in (A, <error>)RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1042, 1042, 1054)
+Apr 24, 2022 3:51:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 24, 2022 3:51:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[<error>]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1541, 1541, 1555)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[<error>]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1690, 1690, 1704)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1690, 1690, 1697)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1690, 1690, 1697)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1690, 1690, 1697)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[<error>]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1892, 1892, 1906)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1892, 1892, 1899)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1892, 1892, 1899)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1892, 1892, 1899)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[<error>]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1937, 1937, 1951)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1937, 1937, 1944)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1937, 1937, 1944)
+something's wrong: no file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala in List[A]RangePosition(file:///Users/zguerrin/Documents/personalDev/funcpinscala/src/main/scala/chapter2.scala, 1937, 1937, 1944)
+Apr 25, 2022 8:37:44 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
